@@ -8,8 +8,9 @@ const { useMemo, useState, useEffect } = React;
 const BUSINESS = {
   name: "Servifiestas DL",
   whatsapp: "+523111199990", // con código de país para WhatsApp
-  phone: "591 00 74",
-  address: "Calle Niños Héroes #78, Col. Lázaro Cárdenas, Tepic, Nayarit",
+  phone: "(311) 591 00 74",
+  address: "Calle Niños Héroes #78, Col. Lázaro Cárdenas, Tepic, Nayarit.",
+  facebook: "https://www.facebook.com/ServifiestasDL.TepicNay",
 };
 
 // Catálogo inicial (ejemplo) – puedes editar, agregar o quitar productos
@@ -560,10 +561,14 @@ function Contacto() {
           <div>🕙 <strong>Horario de Atención:</strong> 10:00 am a 21:00 pm </div>
           <div>📍 <strong>Dirección:</strong> {BUSINESS.address}</div>
           <div>📞 <strong>Teléfono:</strong> {BUSINESS.phone}</div>
-          <div>
-            💬 <strong>WhatsApp:</strong>{" "}
-            <a className="underline" href={`https://wa.me/${BUSINESS.whatsapp.replace('+','')}`} target="_blank" rel="noreferrer">
+          <div>💬 <strong>WhatsApp:</strong>{" "}
+            <a className="text-blue-600 hover:underline" href={`https://wa.me/${BUSINESS.whatsapp.replace('+','')}`} target="_blank" rel="noreferrer">
               {BUSINESS.whatsapp}
+            </a>
+          </div>
+          <div>🌐 <strong>Facebook:</strong>{" "}
+            <a className="text-blue-600 hover:underline" href={BUSINESS.facebook} target="_blank" rel="noreferrer">
+              ServifiestasDL.TepicNay
             </a>
           </div>
         </div>
