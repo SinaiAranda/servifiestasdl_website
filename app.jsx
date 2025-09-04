@@ -256,9 +256,9 @@ function App() {
         <img src="./assets/full_logo.png" alt="Evento Servifiestas DL" className="w-1/4 h-auto"/>
       </div>
 
-      <header className="sticky top-0 z-50 backdrop-blur bg-white/70 border-b border-neutral-200 flex justify-between">
-        <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-          <nav className="flex gap-2 overflow-x-auto no-scrollbar">
+      <header className="sticky top-0 z-50 backdrop-blur bg-white/70 border-b border-neutral-200">
+        <div className="max-w-6xl mx-auto px-4 py-3 flex flex-col items-center">
+          <nav className="flex gap-3 justify-center flex-wrap">
             {[
               ["inicio", "Inicio"],
               ["galeria", "Galería"],
