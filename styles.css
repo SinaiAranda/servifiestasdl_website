@@ -10,3 +10,9 @@ img{max-width:100%;display:block}
 a{text-decoration:none}
 /* Encabezado con logo (usado dentro del componente App) */
 .brand-logo{width:40px;height:40px;border-radius:8px;object-fit:contain}
+.no-scrollbar {
+  scrollbar-width: none; /* Firefox */
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;        /* Chrome/Safari */
+}
