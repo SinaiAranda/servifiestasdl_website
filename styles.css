@@ -1,0 +1,12 @@
+:root{
+  --brand-navy:#0F1A3C;
+  --brand-red:#8F1D1D;
+  --brand-blue:#1747FF;
+  --brand-gold:#F2C94C;
+  --brand-mint:#BBD2CA;
+}
+/* Ajustes base complementarios a Tailwind */
+img{max-width:100%;display:block}
+a{text-decoration:none}
+/* Encabezado con logo (usado dentro del componente App) */
+.brand-logo{width:40px;height:40px;border-radius:8px;object-fit:contain}
