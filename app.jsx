@@ -251,21 +251,28 @@ function App() {
 
   return (
     <div className="min-h-screen bg-neutral-50 text-neutral-900">
-
+      <header 
+        className="sticky top-0 z-50 border-b border-neutral-200"
+        style={{
+          backgroundImage: "url('./assets/banner_header.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          minHeight: "180px",
+        }}
+      >
       <div className="max-w-6xl mx-auto px-4 flex justify-center">
-        <img src="./assets/full_logo.png" alt="Evento Servifiestas DL" className="w-1/4 h-auto"/>
+        <img src="./assets/full_logo.png" alt="Evento Servifiestas DL" className="w-1/4 h-auto mb-2 drop-shadow-lg"/>
       </div>
-
-      <header className="sticky top-0 z-50 backdrop-blur bg-white/70 border-b border-neutral-200">
-        <div className="max-w-6xl mx-auto px-4 py-3 flex flex-col items-center">
-          <nav className="flex gap-3 justify-center flex-wrap">
-            {[
-              ["inicio", "Inicio"],
-              ["galeria", "Galería"],
-              ["catalogo", "Catálogo"],
-              ["cotizacion", "Cotización"],
-              ["contacto", "Contacto"],
-            ].map(([id, label]) => (
+      <div className="max-w-6xl mx-auto px-4 py-3 flex flex-col items-center bg-white/60">
+        <nav className="flex gap-3 justify-center flex-wrap">
+        {[
+          ["inicio", "Inicio"],
+          ["galeria", "Galería"],
+          ["catalogo", "Catálogo"],
+          ["cotizacion", "Cotización"],
+          ["contacto", "Contacto"],
+          ].map(([id, label]) => (
               <button
                 key={id}
                 onClick={() => goto(id)}
